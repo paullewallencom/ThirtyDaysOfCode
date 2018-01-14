@@ -30,11 +30,23 @@
 		 System.out.println(isTheCarOn);
 		 System.out.println(condition);
 	 }
+	 
+	 public void wreckCar()
+	 {
+		 condition = 'C';
+	 }
      
      public static void main(String[] args)
      {
-    	 	//TODO code application logic here    	 	System.out.println("Hello Car!");
-    	 	Car myCar = new Car();
-    	 	myCar.printVariables();
+    	 	System.out.println("------Family's Car");
+    	 	Car familyCar = new Car();
+    	 	familyCar.printVariables();
+    	 	
+    	 	System.out.println("------Paul's Car");
+    	 	Car paulCar = familyCar;
+    	 	
+    	 	familyCar.wreckCar();
+    	 	
+    	 	paulCar.printVariables();
      }
   }
