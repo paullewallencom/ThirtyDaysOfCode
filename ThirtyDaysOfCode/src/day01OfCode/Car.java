@@ -31,6 +31,12 @@
 		 System.out.println(condition);
 	 }
 	 
+	 public void upgradeMinSpeed()
+	 {
+		 minSpeed = maxSpeed;
+		 maxSpeed = maxSpeed + 50;
+	 }
+	 
 	 public void wreckCar()
 	 {
 		 condition = 'C';
@@ -46,6 +52,10 @@
     	 	Car paulCar = familyCar;
     	 	
     	 	familyCar.wreckCar();
+    	 	
+    	 	paulCar.printVariables();
+    	 	
+    	 	familyCar.upgradeMinSpeed();
     	 	
     	 	paulCar.printVariables();
      }
