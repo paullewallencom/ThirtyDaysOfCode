@@ -18,9 +18,25 @@
 	  
 	 int maxSpeed = 100;
 	 int minSpeed = 0;
+	 
 	 double weight = 4079;
+	 
 	 boolean isTheCarOn = false;
+	 
 	 char condition = 'A';
+	 
+	 double maxFuel = 16;
+	 double currentFuel = 8;
+	 double mpg = 26.4;
+	 
+	 int numberOfPeopleInCar = 1;
+	 
+	 public Car(int customMinSpeed, double customWeight, boolean customIsTheCarOn)
+	 {
+		 minSpeed = customMinSpeed;
+		 weight = customWeight;
+		 isTheCarOn = customIsTheCarOn;
+	 }
 	 
 	 public void printVariables()
 	 {
@@ -43,20 +59,8 @@
 	 }
      
      public static void main(String[] args)
-     {
-    	 	System.out.println("------Family's Car");
-    	 	Car familyCar = new Car();
-    	 	familyCar.printVariables();
-    	 	
-    	 	System.out.println("------Paul's Car");
-    	 	Car paulCar = familyCar;
-    	 	
-    	 	familyCar.wreckCar();
-    	 	
-    	 	paulCar.printVariables();
-    	 	
-    	 	familyCar.upgradeMinSpeed();
-    	 	
-    	 	paulCar.printVariables();
+     {	
+    	 	Car birthdayPresent = new Car(500, 2005.456, true);
+    	 	birthdayPresent.printVariables();
      }
   }
