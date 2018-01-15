@@ -65,5 +65,8 @@
     	 	// TODO code application logic here
 		 Car birthdayPresent = new Car(500, 2504.436, true);
 		 birthdayPresent.printVariables();
+		 
+		 Car christmasPresent = new Car(500, 5055.328, false);
+		 christmasPresent.printVariables();
      }
   }
