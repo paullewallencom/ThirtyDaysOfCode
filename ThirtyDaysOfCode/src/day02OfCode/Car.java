@@ -27,6 +27,11 @@
 	 
 	 String nameOfCar = "Pablo Picante";
 	 
+	 double maxFuel = 16;
+	 double currentFuel = 8;
+	 double mpg = 26.4;
+	 int numberOfPeopleInCar = 1;
+	 
 	 public void printVariables()
 	 {
 		 System.out.println("This is the maxSpeed " + maxSpeed);
@@ -50,6 +55,7 @@
 		 System.out.println("Family's Car:");
 		 familyCar.printVariables();
 		 familyCar.upgradeMinSpeed();
+		 familyCar.printVariables();
 		 
      }
   }
