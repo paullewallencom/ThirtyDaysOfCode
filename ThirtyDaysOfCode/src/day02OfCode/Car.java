@@ -37,7 +37,12 @@
 	 // Say x = 5;
 	 // f(5) = 5 + 1 = 6;
 	 
-	 public Car() {}
+	 public Car(int customMinSpeed, double customWeight, boolean customIsTheCarOn) 
+	 {
+		 minSpeed = customMinSpeed;
+		 weight = customWeight;
+		 isTheCarOn = customIsTheCarOn;
+	 }
 	 
 	 public void printVariables()
 	 {
@@ -58,11 +63,7 @@
 	 public static void main(String[] args)
      {	
     	 	// TODO code application logic here
-		 Car familyCar = new Car();
-		 System.out.println("Family's Car:");
-		 familyCar.printVariables();
-		 familyCar.upgradeMinSpeed();
-		 familyCar.printVariables();
-		 
+		 Car birthdayPresent = new Car(500, 2504.436, true);
+		 birthdayPresent.printVariables();
      }
   }
