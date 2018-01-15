@@ -58,7 +58,23 @@
 		 condition = 'C';
 	 }
      
-     public static void main(String[] args)
+	 public void getIn() {
+		 numberOfPeopleInCar++;
+	 }
+	 
+	 public void getOut() {
+		 numberOfPeopleInCar--;
+	 }
+	 
+	 public double howManyMilesTillOutOfGas() {
+		 return currentFuel * mpg;
+	 }
+	 
+	 public double maxMilesPerFillUp() {
+		 return maxFuel * mpg;
+	 }
+     
+	 public static void main(String[] args)
      {	
     	 	Car birthdayPresent = new Car(500, 2005.456, true);
     	 	birthdayPresent.printVariables();
