@@ -30,7 +30,14 @@
 	 double maxFuel = 16;
 	 double currentFuel = 8;
 	 double mpg = 26.4;
+	 
 	 int numberOfPeopleInCar = 1;
+	 
+	 // f(x) = x + 1;
+	 // Say x = 5;
+	 // f(5) = 5 + 1 = 6;
+	 
+	 public Car() {}
 	 
 	 public void printVariables()
 	 {
